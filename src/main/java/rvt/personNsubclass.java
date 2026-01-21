@@ -62,13 +62,13 @@ public class personNsubclass {
         System.out.println(ada);
         System.out.println(esko);
         // 2+3
-        Student ollie = new Student("Ollie", "6381 Hollywood Blvd. Los Angeles 90028");
+        Student ollie = new Student("\nOllie", "6381 Hollywood Blvd. Los Angeles 90028");
         System.out.println(ollie);
         System.out.println("Study credits " + ollie.credit());
         ollie.study();
         System.out.println("Study credits "+ ollie.credit());
         // 4
-        Teacher teacherada = new Teacher("Ada Lovelace", "24 Maddox St. London W1S 2QN", 1200);
+        Teacher teacherada = new Teacher("\nAda Lovelace", "24 Maddox St. London W1S 2QN", 1200);
         Teacher teacheresko = new Teacher("Esko Ukkonen", "Mannerheimintie 15 00100 Helsinki", 5400);
         System.out.println(teacherada);
         System.out.println(teacheresko);
@@ -83,7 +83,7 @@ public class personNsubclass {
         System.out.println(studentollie);
         // 5
         ArrayList<Person> persons = new ArrayList<Person>();
-        persons.add(new Teacher("Ada Lovelace", "24 Maddox St. London W1S 2QN", 1200));
+        persons.add(new Teacher("\nAda Lovelace", "24 Maddox St. London W1S 2QN", 1200));
         persons.add(new Student("Ollie", "6381 Hollywood Blvd. Los Angeles 90028"));
 
         printPerson(persons);
